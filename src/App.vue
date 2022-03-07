@@ -1,15 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>hii</h1>
+  <list-users />
+  <create-user />
+  <get-cookie />
+  <protected-route-test />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ListUsers from './components/api/ListUsers.vue'
+import CreateUser from './components/api/CreateUser.vue'
+import GetCookie from './components/api/GetCookie.vue'
+import ProtectedRouteTest from './components/api/ProtectedRouteTest.vue'
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ListUsers,
+    CreateUser,
+    GetCookie,
+    ProtectedRouteTest,
   }
 }
 </script>
